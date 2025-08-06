@@ -11,3 +11,5 @@ def test_hello_world(client):
     rv = client.get('/')
     assert rv.data == b'Hello, World!'
 
+def test_fail(client):
+    assert True == False
